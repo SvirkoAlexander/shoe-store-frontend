@@ -1,4 +1,3 @@
-import Image from "next/image"
 
 const about = () => {
 	return (
@@ -13,10 +12,10 @@ const about = () => {
 				<li className='p-6 text-left mt-4'>Кроссовки Nike известны своей инновационной технологией, которая позволяет достичь наилучшей производительности на площадке. В зависимости от ваших потребностей, магазин Nike предлагает различные типы кроссовок, такие как беговые, баскетбольные, теннисные и футбольные кроссовки. Все они разработаны с использованием передовых технологий, таких как Flyknit конструкция, React пена и воздушная амортизация Nike Air.</li>
 				<li className='p-6 text-left'>Найк также предлагает широкий выбор моделей для повседневного использования, которые пользуются популярностью во всем мире благодаря своей стильности и комфорту. Некоторые из наиболее популярных моделей кроссовок Nike в этой категории включают Air Max, Air Force 1, и Cortez.</li>
 			</ul>
-			<img src="/slide-3.png" className="aspect-[16/9] md:aspect-auto" />
+			<img src="/slide-2.png" className="aspect-[16/9] md:aspect-auto rounded-xl" />
 			<div className="text-[12px] text-black cursor-pointer text-center mt-5">
-          © 2023 GIFTEDVISION, Inc. All Rights Reserved
-        </div>
+				© 2023 GIFTEDVISION, Inc. All Rights Reserved
+			</div>
 		</div>
 	)
 }

@@ -3,18 +3,18 @@ import React from "react";
 import { BsChevronDown } from "react-icons/bs";
 
 const data = [
-  { id: 1, name: "Home", url: "/" },
-  { id: 2, name: "About", url: "/about" },
-  { id: 3, name: "Categories", subMenu: true },
-  { id: 4, name: "Contact", url: "/contact" },
+  { id: 1, name: "Главная", url: "/" },
+  { id: 2, name: "О Нас", url: "/about" },
+  { id: 3, name: "Категории", subMenu: true },
+  { id: 4, name: "Контакты", url: "/contact" },
 ];
 
-const subMenuData = [
-  { id: 1, name: "Jordan", doc_count: 11 },
-  { id: 2, name: "Sneakers", doc_count: 8 },
-  { id: 3, name: "Running shoes", doc_count: 64 },
-  { id: 4, name: "Football shoes", doc_count: 107 },
-];
+// const subMenuData = [
+//   { id: 1, name: "Jordan", doc_count: 11 },
+//   { id: 2, name: "Sneakers", doc_count: 8 },
+//   { id: 3, name: "Running shoes", doc_count: 64 },
+//   { id: 4, name: "Football shoes", doc_count: 107 },
+// ];
 
 const Menu = ({ showCatMenu, setShowCatMenu, categories }) => {
   return (

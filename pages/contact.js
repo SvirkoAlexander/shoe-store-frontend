@@ -1,5 +1,5 @@
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const contact = () => {
 	return (
@@ -18,30 +18,33 @@ const contact = () => {
 					<li className="mb-4 text-center max-w-[800px] mx-4 text-[12px] md:text-[15px] leading-tight">Также вы можете связаться с нами через социальные сети, перейдя по ссылкам на нашей странице в Instagram, Facebook и Twitter. Мы будем рады услышать от вас и ответить на все ваши вопросы!</li>
 				</ul>
 				<div className="flex gap-4 justify-center ">
-          <div
-            onClick={() =>
-              window.open("https://vk.com/personal_trainer_minsk", "_blank")
-            }
-            className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer duration-200 hover:scale-110"
-          >
-            <FaFacebookF size={20} />
-          </div>
-          <Link
-            href="https://vk.com/personal_trainer_minsk"
-            className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[1.5] cursor-pointer duration-200 hover:scale-110"
-          >
-            <FaTwitter size={20} />
-          </Link>
-          <div className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer duration-200 hover:scale-110">
-            <FaYoutube size={20} />
-          </div>
-          <div className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer duration-200 hover:scale-110">
-            <FaInstagram size={20} />
-          </div>
-        </div>
+					<div
+						onClick={() =>
+							window.open("https://vk.com/personal_trainer_minsk", "_blank")
+						}
+						className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer duration-200 hover:scale-110"
+					>
+						<FaFacebookF size={20} />
+					</div>
+					<Link
+						href="https://vk.com/personal_trainer_minsk"
+						className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[1.5] cursor-pointer duration-200 hover:scale-110"
+					>
+						<FaTwitter size={20} />
+					</Link>
+					<div className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer duration-200 hover:scale-110">
+						<FaYoutube size={20} />
+					</div>
+					<div className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer duration-200 hover:scale-110">
+						<FaInstagram size={20} />
+					</div>
+				</div>
 			</div>
 
-			<img src="/slide-2.png" className="aspect-[16/9] md:aspect-auto" />
+			<div className="flex justify-center">
+				<img src="/logocontact.webp" />
+			</div>
+
 			<div className="text-[12px] text-black cursor-pointer text-center mt-5">
 				© 2023 GIFTEDVISION, Inc. All Rights Reserved
 			</div>

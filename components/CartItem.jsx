@@ -1,5 +1,6 @@
 import { removeFromCart, updateCart } from "@/store/cartSlice";
 import Image from "next/image";
+import Link from "next/link";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { useDispatch } from "react-redux";
 
@@ -20,14 +21,16 @@ const CartItem = ({ data }) => {
   return (
     <div className="flex py-5 gap-3 md:gap-5 border-b">
       {/* IMAGE START */}
-      <div className="shrink-0 aspect-square w-[50px] md:w-[120px]">
-        <Image
-          width={120}
-          height={120}
-          src={p.thumbnail.data[0].attributes.url}
-          alt={p.name}
-        />
-      </div>
+      <Link href={`/product/${p.slug}`}>
+        <div className="shrink-0 aspect-square w-[50px] md:w-[120px] cursor-pointer">
+          <Image
+            width={120}
+            height={120}
+            src={p.thumbnail.data[0].attributes.url}
+            alt={p.name}
+          />
+        </div>
+      </Link>
       {/* IMAGE END */}
 
       <div className="w-full flex flex-col">
@@ -59,15 +62,14 @@ const CartItem = ({ data }) => {
               <div className="font-semibold">Размер:</div>
               <select
                 className="hover:text-black hover:scale-125 duration-200"
-								onChange={(e) => updateCartItem(e, "selectedSize")}
-								defaultValue={data.selectedSize}
+                onChange={(e) => updateCartItem(e, "selectedSize")}
+                defaultValue={data.selectedSize}
               >
                 {p.size.data.map((item, i) => {
                   return (
                     <option
                       key={i}
                       disabled={!item.enabled ? true : false}
-                      
                       value={item.size}
                     >
                       {item.size}
@@ -81,12 +83,12 @@ const CartItem = ({ data }) => {
               <div className="font-semibold">Кол-во:</div>
               <select
                 className="hover:text-black hover:scale-125 duration-200"
-								onChange={(e) => updateCartItem(e, "quantity")}
-								defaultValue={data.quantity}
+                onChange={(e) => updateCartItem(e, "quantity")}
+                defaultValue={data.quantity}
               >
                 {Array.from({ length: 10 }, (_, i) => i + 1).map((q, i) => {
                   return (
-                    <option value={q} key={i} >
+                    <option value={q} key={i}>
                       {q}
                     </option>
                   );

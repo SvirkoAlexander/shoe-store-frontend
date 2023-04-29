@@ -11,7 +11,7 @@ const ProductCard = ({ data }) => {
   return (
     <Link
       href={`/product/${p.slug}`}
-      className="transform overflow-hidden bg-white duration-200 hover:scale-105 cursor-pointer"
+      className="transform overflow-hidden bg-white duration-200 hover:scale-105 cursor-pointer rounded-lg"
     >
       <Image
         key={id}
